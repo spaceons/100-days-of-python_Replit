@@ -1,4 +1,4 @@
-rom getpass import getpass as input
+from getpass import getpass as input
 
 scoreP1 = 0
 scoreP2 = 0
@@ -48,10 +48,10 @@ while True:
     print("Remember to type r,s or p.")
     continue
   if scoreP1 == 3:
-    print("PLAYER 1 won with", scoreP1, "point")
+    print("PLAYER 1 won with", scoreP1, "points! PLAYER 2 has", scoreP2)
     break
   elif scoreP2 == 3:
-    print("PLAYER 2 won with", scoreP2, "point")
+    print("PLAYER 2 won with", scoreP2, "points! PLAYER 1 has", scoreP1)
     break
   else:
     continue
